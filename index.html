@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصات وقنوات التعليم المهني 2026</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #ffffff, #f0f8ff);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+        
+        .title {
+            color: #e63946;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            animation: pulse 2s infinite;
+        }
+        
+        .subtitle {
+            color: #1d3557;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        
+        .manager {
+            background: linear-gradient(135deg, #1d3557, #457b9d);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-top: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .buttons-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        
+        .button {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+        
+        .button:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+            border-color: #e63946;
+        }
+        
+        .button-image {
+            height: 160px;
+            overflow: hidden;
+        }
+        
+        .button-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .button:hover .button-image img {
+            transform: scale(1.1);
+        }
+        
+        .button-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .button-title {
+            color: #1d3557;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .button-icon {
+            margin-left: 10px;
+            font-size: 1.6rem;
+        }
+        
+        .button-description {
+            color: #457b9d;
+            margin-bottom: 15px;
+            flex-grow: 1;
+            line-height: 1.6;
+        }
+        
+        .button-link {
+            background: linear-gradient(135deg, #e63946, #a8dadc);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .button-link i {
+            margin-left: 8px;
+        }
+        
+        .button-link:hover {
+            background: linear-gradient(135deg, #a8dadc, #e63946);
+            transform: scale(1.05);
+        }
+        
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #1d3557, #457b9d);
+            color: white;
+            border-radius: 15px;
+            width: 100%;
+            max-width: 800px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .click-sound {
+            display: none;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        @keyframes smiley {
+            0% { transform: rotate(0deg); }
+            25% { transform: rotate(10deg); }
+            50% { transform: rotate(0deg); }
+            75% { transform: rotate(-10deg); }
+            100% { transform: rotate(0deg); }
+        }
+        
+        .smiley {
+            display: inline-block;
+            animation: smiley 2s infinite;
+            margin: 0 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .buttons-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">منصات وقنوات التعليم المهني 2026</h1>
+        <p class="subtitle">بوابتك نحو التعليم المهني المتطور والفرص الواعدة</p>
+        <div class="manager">بإدارة المهندس حمزة حسام</div>
+    </div>
+    
+    <div class="buttons-container">
+        <!-- Button 1 -->
+        <div class="button" onclick="playSound(1)">
+            <div class="button-image">
+                <img src="https://images.unsplash.com/photo-1587560699334-cc4ff634909a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="قناة المهندس حمزة حسام">
+            </div>
+            <div class="button-content">
+                <h2 class="button-title"><i class="button-icon fas fa-user-tie"></i> القناة الخاصة بالمهندس: حمزة حسام</h2>
+                <p class="button-description">انضم إلى قناتنا على تيليجرام للحصول على آخر المستجدات والدروس الخاصة بالتعليم المهني.</p>
+                <a href="https://t.me/vfgytg" class="button-link" target="_blank">انضم الآن <i class="fas fa-paper-plane"></i></a>
+            </div>
+        </div>
+        
+        <!-- Button 2 -->
+        <div class="button" onclick="playSound(2)">
+            <div class="button-image">
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="منصة العلا للمرشحات">
+            </div>
+            <div class="button-content">
+                <h2 class="button-title"><i class="button-icon fas fa-chalkboard-teacher"></i> منصة العلا للمرشحات</h2>
+                <p class="button-description">منصة متخصصة للمرشحات في التعليم المهني، تقديم الدعم الكامل والموارد التعليمية.</p>
+                <a href="https://t.me/manssaola" class="button-link" target="_blank">انضم الآن <i class="fas fa-paper-plane"></i></a>
+            </div>
+        </div>
+        
+        <!-- Button 3 -->
+        <div class="button" onclick="playSound(3)">
+            <div class="button-image">
+                <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="شبكة المهندس للتعليم المهني">
+            </div>
+            <div class="button-content">
+                <h2 class="button-title"><i class="button-icon fas fa-network-wired"></i> شبكة المهندس للتعليم المهني</h2>
+                <p class="button-description">شبكة متكاملة للتعليم المهني، تجمع الطلاب والمدرسين والخبراء في مجال التعليم التقني.</p>
+                <a href="https://t.me/vfgytg2" class="button-link" target="_blank">انضم الآن <i class="fas fa-paper-plane"></i></a>
+            </div>
+        </div>
+        
+        <!-- Button 4 -->
+        <div class="button" onclick="playSound(4)">
+            <div class="button-image">
+                <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="تجمع طلاب السادس مهني 2026">
+            </div>
+            <div class="button-content">
+                <h2 class="button-title"><i class="button-icon fas fa-users"></i> تجمع طلاب السادس مهني 2026</h2>
+                <p class="button-description">انضم إلى مجتمع طلاب السادس المهني لتبادل الخبرات والاستعداد للامتحانات والجامعة.</p>
+                <a href="https://t.me/foghij" class="button-link" target="_blank">انضم الآن <i class="fas fa-paper-plane"></i></a>
+            </div>
+        </div>
+        
+        <!-- Button 5 -->
+        <div class="button" onclick="playSound(5)">
+            <div class="button-image">
+                <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="تجمع طلاب قسم الحاسبات">
+            </div>
+            <div class="button-content">
+                <h2 class="button-title"><i class="button-icon fas fa-laptop-code"></i> تجمع طلاب قسم الحاسبات</h2>
+                <p class="button-description">مجتمع خاص لطلاب قسم الحاسبات، لمشاركة المشاريع والأكواد والاستفادة من الخبرات المشتركة.</p>
+                <a href="https://t.me/computering10" class="button-link" target="_blank">انضم الآن <i class="fas fa-paper-plane"></i></a>
+            </div>
+        </div>
+        
+        <!-- Button 6 -->
+        <div class="button" onclick="playSound(6)">
+            <div class="button-image">
+                <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="بوت مكتبة العلا">
+            </div>
+            <div class="button-content">
+                <h2 class="button-title"><i class="button-icon fas fa-robot"></i> بوت مكتبة العلا للكتب والملازم</h2>
+                <p class="button-description">احصل على جميع الكتب والملازم الدراسية عبر بوت مكتبة العلا على تيليجرام.</p>
+                <a href="https://t.me/manssaola22BOT" class="button-link" target="_blank">انضم الآن <i class="fas fa-paper-plane"></i></a>
+            </div>
+        </div>
+        
+        <!-- Button 7 -->
+        <div class="button" onclick="playSound(7)">
+            <div class="button-image">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="القبولات وخدمات الخريجين">
+            </div>
+            <div class="button-content">
+                <h2 class="button-title"><i class="button-icon fas fa-graduation-cap"></i> القبولات وخدمات الخريجين</h2>
+                <p class="button-description">خدمات متكاملة للقبولات الجامعية ودعم الخريجين في سوق العمل، مخصصة لطلبة الجامعات.</p>
+                <a href="https://t.me/vfgytg1" class="button-link" target="_blank">انضم الآن <i class="fas fa-paper-plane"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>تمت البرمجة بواسطة المهندس حمزة حسام <span class="smiley">😊</span></p>
+    </div>
+    
+    <audio class="click-sound" id="click-sound-1">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-select-click-1109.mp3" type="audio/mpeg">
+    </audio>
+    <audio class="click-sound" id="click-sound-2">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-select-click-1109.mp3" type="audio/mpeg">
+    </audio>
+    <audio class="click-sound" id="click-sound-3">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-select-click-1109.mp3" type="audio/mpeg">
+    </audio>
+    <audio class="click-sound" id="click-sound-4">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-select-click-1109.mp3" type="audio/mpeg">
+    </audio>
+    <audio class="click-sound" id="click-sound-5">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-select-click-1109.mp3" type="audio/mpeg">
+    </audio>
+    <audio class="click-sound" id="click-sound-6">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-select-click-1109.mp3" type="audio/mpeg">
+    </audio>
+    <audio class="click-sound" id="click-sound-7">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-select-click-1109.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script>
+        function playSound(buttonNumber) {
+            const sound = document.getElementById(`click-sound-${buttonNumber}`);
+            sound.currentTime = 0;
+            sound.play();
+            
+            // إضافة سمايل عند النقر
+            const button = event.currentTarget;
+            const smiley = document.createElement('span');
+            smiley.innerHTML = ' 👍';
+            smiley.style.fontSize = '1.5rem';
+            smiley.style.position = 'absolute';
+            smiley.style.animation = 'smiley 1s forwards';
+            
+            const rect = button.getBoundingClientRect();
+            smiley.style.left = (rect.left + rect.width/2) + 'px';
+            smiley.style.top = (rect.top - 30) + 'px';
+            
+            document.body.appendChild(smiley);
+            
+            setTimeout(() => {
+                document.body.removeChild(smiley);
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
